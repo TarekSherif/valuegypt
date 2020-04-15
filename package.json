@@ -1,0 +1,26 @@
+{
+  "name": "valuegypt",
+  "version": "1.0.0",
+  "description": "valuegypt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarekSherif/valuegypt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TarekSherif/valuegypt/issues"
+  },
+  "homepage": "https://github.com/TarekSherif/valuegypt#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.0",
+    "wow.js": "^1.2.2"
+  }
+}
