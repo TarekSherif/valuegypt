@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/TarekSherif/valuegypt#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
     "bootstrap": "^4.4.1",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "vue": "^2.6.11"
   }
 }

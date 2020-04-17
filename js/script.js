@@ -1,5 +1,10 @@
 (function ($) {
   "use strict";
+  $("html").niceScroll({
+    styler: "fb",
+    cursorcolor: "#555",
+    cursorwidth: "12px",
+  });
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {

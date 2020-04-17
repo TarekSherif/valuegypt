@@ -69,14 +69,8 @@
                     <span
                       class="icon flaticon-phone-symbol-of-an-auricular-inside-a-circle"
                     ></span
-                    ><strong>Tel:</strong> ⁩01021017470-⁩
+                    ><strong>{{tel}}:</strong> ⁩01021017470-⁩
                     01140399642-01095077604
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon flaticon-calendar-2"></span
-                      ><strong>10:00 AM - 7:00 PM</strong></a
-                    >
                   </li>
                 </ul>
               </div>
@@ -105,13 +99,18 @@
                     id="navbarSupportedContent"
                   >
                     <ul class="navigation clearfix">
-                      <li><a href="#contactUS">تواصل معنا</a></li>
-                      <li><a href="#gallery">سابقات الأعمال</a></li>
                       <li>
-                        <a href="#features"> UPVC مميزات أبواب و شبابيك</a>
+                        <a href="#langage">
+                          <img :src="lang" @click="changeLanguage" alt="ar" />
+                        </a>
                       </li>
-                      <li><a href="#services">الخدمات</a></li>
-                      <li><a href="#home">الرئيسية</a></li>
+                      <li><a href="#contactUS">{{connectUs}}</a></li>
+                      <li><a href="#gallery">{{previousWorks}}</a></li>
+                      <li>
+                        <a href="#features"> {{features}}</a>
+                      </li>
+                      <li><a href="#services">{{services}}</a></li>
+                      <li><a href="#home">{{home}}</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -154,13 +153,13 @@
                   id="navbarSupportedContent1"
                 >
                   <ul class="navigation clearfix">
-                    <li><a href="#contactUS">تواصل معنا</a></li>
-                    <li><a href="#gallery">سابقات الأعمال</a></li>
+                    <li><a href="#contactUS">{{connectUs}}</a></li>
+                    <li><a href="#gallery">{{previousWorks}}</a></li>
                     <li>
-                      <a href="#features"> UPVC مميزات أبواب و شبابيك</a>
+                      <a href="#features"> {{features}}</a>
                     </li>
-                    <li><a href="#services">الخدمات</a></li>
-                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services">{{services}}</a></li>
+                    <li><a href="#home">{{home}}</a></li>
                   </ul>
                 </div>
               </nav>
@@ -215,31 +214,13 @@
             <!--Content Column-->
             <div
               class="content-column col-lg-8 col-md-12 col-sm-12"
-              style="text-align: right;"
+              :style="{ 'text-align':  textAlign}"
             >
               <div class="inner-column">
-                <h2><span class="theme_color">upvc </span> تمتع بالهدوء</h2>
+                <h2><span class="theme_color">upvc </span> {{enjoyCalm}}</h2>
                 <div class="text">
-                  <p>
-                    يعتبر اليو بي في سي upvc هو البديل الاكثر أنتشار لكلاً من
-                    الخشب و الالومنيوم حيث يعتمد عليه أشهر مصممي الديكور في
-                    العالم و كل محبي الرقي حيث انه يوفر في التكلفة بنسبة كبيرة
-                    مقارنة بالخشب و الالومنيوم حيث يتمتع الشبابيك و الابواب
-                    المصنعة من مادة اليو بي في سي بضمان يصل إلي 10 سنوات على كل
-                    الوحدات وهو من أكثر العناصر التى تميز تلك الصناعة. ويوفر
-                    أيضا لهم تعدد الأشكال و التصميمات المختلفة التى تعطي للمالك
-                    الأحساس بالتنوع المختلف و هو ما يبحث عنه الملاك، حيث انه يتم
-                    تدعيمه من الداخل بعناصر الحديد اللأزمة التى تعمل على زيادة
-                    الصلابة و المتانة داخل الوحدات و التى تعمل ايضاً على حماية
-                    الوحدات من الداخل، لذلك من المهم التاكد من وجود أجزاء الحديد
-                    الصلب من داخل الوحدات
-                  </p>
-                  <p>
-                    أبواب وشبابيك البولي فينيل من ڤاليو مصر دلوقتي تقدر تحافظ
-                    علي صحتك وصحة أولادك أيا كان مستوي التلوث بالخارج أفضل حماية
-                    من الفيروسات والبكتيريا لأنها مش مصنوعة من المعدن زي
-                    الالوميتال اللي بيسهل التصاق الميكروبات بيه
-                  </p>
+                  <p>{{enjoyCalmDetails1}}</p>
+                  <p>{{enjoyCalmDetails2}}</p>
                 </div>
               </div>
             </div>
@@ -247,7 +228,7 @@
         </div>
 
         <!--Address Box-->
-        <section class="address-box" style="text-align: right;">
+        <section class="address-box" :style="{ 'text-align':  textAlign}">
           <div
             class="inner-box"
             style="background-image: url(images/background/pattern-1.png);"
@@ -255,9 +236,11 @@
             <div class="icon-box">
               <span class="icon flaticon-place"></span>
             </div>
-            <h2>العنوان</h2>
+            <h2>
+              {{address}}
+            </h2>
             <div class="text">
-              143 شارع المريوطية - برج سما سيتى - الهرم - الجيزة
+              {{addressDetails}}
             </div>
           </div>
         </section>
@@ -271,7 +254,7 @@
             <!--Sec Title-->
             <div class="sec-title centered">
               <div class="title-inner">
-                <h2>بعض <span class="theme_color">الخدمات</span></h2>
+                <h2>{{some}} <span class="theme_color">{{services}}</span></h2>
               </div>
             </div>
           </div>
@@ -296,12 +279,13 @@
                   <div class="icon-box">
                     <span class="icon flaticon-window"></span>
                   </div>
-                  <h3><a href="#">تركيب النوافذ </a></h3>
+                  <h3>
+                    <a href="#">
+                      {{services1}}
+                    </a>
+                  </h3>
                   <div class="text">
-                    تقوم الشركه بتخصيص افضل المهندسون والفنيون فى تصميم الخاص بك
-                    ومساعدتك فى تعين تصميم عالمي بمواصفات عالميه بشرط ان تكون
-                    هذه الخامات من افضل اقطاعات العالميه ومستورده من فرنسا
-                    وتركيا
+                    {{services1Details}}
                   </div>
                 </div>
               </div>
@@ -327,10 +311,13 @@
                   <div class="icon-box">
                     <span class="icon flaticon-doorway"></span>
                   </div>
-                  <h3><a href="#"> تركيب الأبواب</a></h3>
+                  <h3>
+                    <a href="#">
+                      {{services2}}
+                    </a>
+                  </h3>
                   <div class="text">
-                    نقدم وحدات أبواب و شبابيك الـ upvc بمواصفات عالمية معتمدة و
-                    أسعار تنافسية على مستوى المشاريع و الأفراد.
+                    {{services2Details}}
                   </div>
                 </div>
               </div>
@@ -356,12 +343,13 @@
                   <div class="icon-box">
                     <span class="icon flaticon-car-parts"></span>
                   </div>
-                  <h3><a href="#">شيش الحماية</a></h3>
+                  <h3>
+                    <a href="#">
+                      {{services3}}
+                    </a>
+                  </h3>
                   <div class="text">
-                    يستخدم الشيش الحماية لنفس اغراض الشيش العادي من عزل فعال ضد
-                    الغبار والاتربة و الامطار بالاضافة الى اضفاء مزيد من الحماية
-                    لمنزلك حيث انه مصنع من الالمونيوم عالى الكثافى والمتين جدا
-                    مما يجعله صعب الاختراق
+                    {{services3Details}}
                   </div>
                 </div>
               </div>
@@ -381,8 +369,8 @@
             <div class="sec-title centered">
               <div class="title-inner">
                 <h2>
-                  بعض
-                  <span class="theme_color">سابقات الأعمال</span>
+                  {{some}}
+                  <span class="theme_color">{{previousWorks}}</span>
                 </h2>
               </div>
             </div>
@@ -450,7 +438,7 @@
       <section
         id="features"
         class="fluid-section-one"
-        style="text-align: right;"
+        :style="{ 'text-align':  textAlign}"
       >
         <div class="outer-container clearfix">
           <!--Content Column-->
@@ -459,7 +447,7 @@
               <div class="sec-title">
                 <h2>
                   Upvc
-                  <span class="theme_color">مميزات أبواب و شبابيك</span>
+                  <span class="theme_color">{{features}}</span>
                 </h2>
               </div>
 
@@ -567,8 +555,7 @@
                         <h3>Visit Our Place</h3>
                         <ul>
                           <li>
-                            143 شارع المريوطية - برج سما سيتى <br />
-                            - الهرم - الجيزة
+                            {{addressDetails}}
                           </li>
                         </ul>
                         <a href="#" class="find-map"
@@ -609,9 +596,9 @@
                           </li>
                           <li>valuegypt.upvc@gmail.com</li>
                         </ul>
-                        <a href="#" class="find-map"
-                          ><span class="arrow flaticon-right-arrow-4"></span>
-                          10:00 AM - 7:00 PM</a
+                        <a href="#"
+                          ><span class="icon flaticon-calendar-2"></span
+                          ><strong>10:00 AM - 7:00 PM</strong></a
                         >
                       </div>
                     </div>
@@ -632,12 +619,11 @@
       role="button"
       ><i class="fa fa-arrow-up"></i
     ></a>
-    <!-- node_modules\jquery\dist\jquery.min.js -->
-    <script src="node_modules\jquery\dist\jquery.slim.min.js"></script>
+
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
 
     <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
     <script src="js/jquery.fancybox.js"></script>
 
     <script src="js/owl.js"></script>
@@ -651,6 +637,28 @@
     <script src="js/masterslider/masterslider.min.js"></script>
     <!--End Master Slider -->
 
+    <script src="js/jquery.nicescroll.min.js"></script>
+
     <script src="js/script.js"></script>
+
+    <script src="js\Langage.js"></script>
+    <script src="node_modules\vue\dist\vue.min.js"></script>
+    <script>
+      new Vue({
+        el: "#home",
+        data: lang,
+        methods: {
+          changeLanguage: function () {
+            var language = localStorage.getItem("language");
+            if (language == "Ar") {
+              localStorage.setItem("language", "En");
+            } else {
+              localStorage.setItem("language", "Ar");
+            }
+            location.reload();
+          },
+        },
+      });
+    </script>
   </body>
 </html>
