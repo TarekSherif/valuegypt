@@ -1552,7 +1552,7 @@ img {
 
 .main-slider .slide {
   position: relative;
-  padding: 185px 0px;
+  /* padding: 185px 0px; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10691,4 +10691,36 @@ img {
 
 .back-to-top:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* ----- 2. Footer Social Icons ----- */
+ul.footer_social {
+  display: block;
+
+  margin: 0;
+}
+
+ul.footer_social li {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  color: #999;
+  line-height: 100% !important;
+}
+
+ul.footer_social li a i {
+  display: inline-block;
+  padding: 0;
+  font-size: 22px !important;
+  line-height: 22px !important;
+  color: #999;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+ul.footer_social li a i:hover {
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  color: #3498db;
 }

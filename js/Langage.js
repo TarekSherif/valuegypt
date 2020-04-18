@@ -4,7 +4,9 @@ if (language == "Ar") {
   var lang = {
     lang: "images/ar.png",
     tel: "التليفون",
-    connectUs: "تواصل معنا",
+
+    connect: "تواصل",
+    us: "معنا",
     previousWorks: "سابقات الأعمال",
     features: "مميزات",
     services: "الخدمات",
@@ -43,12 +45,16 @@ if (language == "Ar") {
         الغبار والاتربة و الامطار بالاضافة الى اضفاء مزيد من الحماية
         لمنزلك حيث انه مصنع من الالمونيوم عالى الكثافى والمتين جدا
         مما يجعله صعب الاختراق`,
-    features1: "",
-    features1Details: ``,
-    features2: "",
-    features2Details: ``,
-    features3: "",
-    features3Details: ``,
+    features1: "مقاوم للتأثيرات البيئية و المناخية",
+    features1Details: ` عازل للمياه و الأمطار و عازل للرياح و العواصف و
+                          الأتربة و يحمي من الأشعة فوق البنفسجية`,
+    features2: "حماية عالية",
+    features2Details: ` مقاوم للخدوش و الصدمات و يتميز بخاصية الاطفاء الذاتي و
+                          غير موصل للكهرباء`,
+    features3: " أقوى عازل للصوت",
+    features3Details: `لاحتوائها علي غرف داخلية متعددة ولذلك هى عازلة جدا للازعاج والصوت بسبب عدم وجود فراغات واستخدام اللحام فى الزوايا والخامة نفسها لا تساعد في توصيل الصوت.`,
+    phoneMail: "التليفون & البريد الالكتروني",
+    visitUs: "زورنا",
     some: "بعض",
     textAlign: "right",
   };
@@ -56,7 +62,8 @@ if (language == "Ar") {
   var lang = {
     lang: "images/en.png",
     tel: "tel",
-    connectUs: " connect Us",
+    connect: "connect",
+    us: "Us",
     previousWorks: "previous Works",
     features: "features",
     services: "services",
@@ -82,12 +89,14 @@ if (language == "Ar") {
         الغبار والاتربة و الامطار بالاضافة الى اضفاء مزيد من الحماية
         لمنزلك حيث انه مصنع من الالمونيوم عالى الكثافى والمتين جدا
         مما يجعله صعب الاختراق`,
-    features1: "",
-    features1Details: ``,
-    features2: "",
-    features2Details: ``,
-    features3: "",
-    features3Details: ``,
+    features1: "Resistant to environmental and climatic influences",
+    features1Details: `It insulates water and rain, wind and storms, and dust and protects against UV rays`,
+    features2: "High protection",
+    features2Details: `It is scratch and shock resistant and has the feature of self-extinguishing and non-conductive`,
+    features3: "Stronger soundproofing",
+    features3Details: `It contains multiple internal rooms and therefore it is very insulated for noise and noise due to the lack of voids and the use of welding in the corners and the material itself does not help in the delivery of sound.`,
+    phoneMail: "Phone & Mail",
+    visitUs: "Visit Us",
     some: "some",
     textAlign: "left",
   };

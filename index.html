@@ -9,10 +9,7 @@
       href="node_modules\font-awesome\css\font-awesome.min.css"
       rel="stylesheet"
     />
-    <!-- wow.js -->
-    <!-- <link href="node_modules\animate.css\animate.css" rel="stylesheet" />
-    <link href="node_modules\wow.js\css\site.css" rel="stylesheet" /> -->
-    <!--End wow.js -->
+
     <link
       href="node_modules\bootstrap\dist\css\bootstrap.min.css"
       rel="stylesheet"
@@ -69,8 +66,8 @@
                     <span
                       class="icon flaticon-phone-symbol-of-an-auricular-inside-a-circle"
                     ></span
-                    ><strong>{{tel}}:</strong> ⁩01021017470-⁩
-                    01140399642-01095077604
+                    ><strong>{{tel}}:</strong>
+                    ⁩01021017470-⁩ 01140399642-01095077604
                   </li>
                 </ul>
               </div>
@@ -104,7 +101,7 @@
                           <img :src="lang" @click="changeLanguage" alt="ar" />
                         </a>
                       </li>
-                      <li><a href="#contactUS">{{connectUs}}</a></li>
+                      <li><a href="#contactUS">{{connect}} {{us}}</a></li>
                       <li><a href="#gallery">{{previousWorks}}</a></li>
                       <li>
                         <a href="#features"> {{features}}</a>
@@ -153,7 +150,12 @@
                   id="navbarSupportedContent1"
                 >
                   <ul class="navigation clearfix">
-                    <li><a href="#contactUS">{{connectUs}}</a></li>
+                    <li>
+                      <a href="#langage">
+                        <img :src="lang" @click="changeLanguage" alt="ar" />
+                      </a>
+                    </li>
+                    <li><a href="#contactUS">{{connect}} {{us}}</a></li>
                     <li><a href="#gallery">{{previousWorks}}</a></li>
                     <li>
                       <a href="#features"> {{features}}</a>
@@ -173,21 +175,52 @@
 
       <!--Main Slider-->
       <section class="main-slider">
-        <div class="main-slider-carousel owl-carousel owl-theme">
-          <div
-            class="slide"
-            style="background-image: url(images/main-slider/image-1.jpg);"
-          ></div>
-
-          <div
-            class="slide"
-            style="background-image: url(images/main-slider/image-2.jpg);"
-          ></div>
-
-          <div
-            class="slide"
-            style="background-image: url(images/main-slider/image-3.jpg);"
-          ></div>
+        <div
+          id="carouselMainSlider"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="images/main-slider/image-1.jpg"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/main-slider/image-2.jpg"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/main-slider/image-3.jpg"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselMainSlider"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselMainSlider"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </section>
       <!--End Main Slider-->
@@ -258,9 +291,11 @@
               </div>
             </div>
           </div>
-          <div class="single-item-carousel owl-carousel owl-theme">
+
+          <div class="row">
             <!--Services Block-->
-            <div class="services-block">
+            <!-- col-md-4 col-sm-12 -->
+            <div class="services-block col-md-4 col-sm-12">
               <div class="inner-box">
                 <div class="image-outer">
                   <div class="image">
@@ -292,7 +327,10 @@
             </div>
 
             <!--Services Block-->
-            <div class="services-block">
+            <div
+              class="services-block col-md-4 col-sm-12"
+              style="background-color: white;"
+            >
               <div class="inner-box">
                 <div class="image-outer">
                   <div class="image">
@@ -324,7 +362,7 @@
             </div>
 
             <!--Services Block-->
-            <div class="services-block">
+            <div class="services-block col-md-4 col-sm-12">
               <div class="inner-box">
                 <div class="image-outer">
                   <div class="image">
@@ -375,60 +413,58 @@
               </div>
             </div>
           </div>
-          <!--Carousel Box-->
-          <div class="carousel-box">
-            <div class="auto-container">
-              <!-- Slider -->
-              <div class="ms-caro3d-template">
-                <!-- masterslider -->
-                <div
-                  class="master-slider ms-skin-default"
-                  id="master-gallery-slider"
-                >
-                  <!--Slide-->
-                  <div class="ms-slide">
-                    <div class="content-layer">
-                      <div class="image">
-                        <a
-                          href="images/gallery/1.jpg"
-                          class="lightbox-image"
-                          data-fancybox="latest-gallery"
-                          ><img src="images/gallery/1.jpg" alt=""
-                        /></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Slide-->
-                  <div class="ms-slide">
-                    <div class="content-layer">
-                      <div class="image">
-                        <a
-                          href="images/gallery/2.jpg"
-                          class="lightbox-image"
-                          data-fancybox="latest-gallery"
-                          ><img src="images/gallery/2.jpg" alt=""
-                        /></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Slide-->
-                  <div class="ms-slide">
-                    <div class="content-layer">
-                      <div class="image">
-                        <a
-                          href="images/gallery/3.jpg"
-                          class="lightbox-image"
-                          data-fancybox="latest-gallery"
-                          ><img src="images/gallery/3.jpg" alt=""
-                        /></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end of masterslider -->
+          <div
+            id="carouselpreviousWorks"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="images\previousWorks\1.jpg"
+                  alt="First slide"
+                />
               </div>
-              <!-- end of Slider -->
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images\previousWorks\2.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images\previousWorks\3.jpg"
+                  alt="Third slide"
+                />
+              </div>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselpreviousWorks"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselpreviousWorks"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </section>
@@ -463,12 +499,11 @@
                       <div class="content">
                         <h3>
                           <a href="#">
-                            مقاوم للتأثيرات البيئية و المناخية
+                            {{features1}}
                           </a>
                         </h3>
                         <div class="text">
-                          عازل للمياه و الأمطار و عازل للرياح و العواصف و
-                          الأتربة و يحمي من الأشعة فوق البنفسجية
+                          {{features1Details}}
                         </div>
                       </div>
                     </div>
@@ -483,11 +518,12 @@
                       </div>
                       <div class="content">
                         <h3>
-                          <a href="#">حماية عالية</a>
+                          <a href="#">
+                            {{features2}}
+                          </a>
                         </h3>
                         <div class="text">
-                          مقاوم للخدوش و الصدمات و يتميز بخاصية الاطفاء الذاتي و
-                          غير موصل للكهرباء
+                          {{features2Details}}
                         </div>
                       </div>
                     </div>
@@ -502,12 +538,12 @@
                       </div>
                       <div class="content">
                         <h3>
-                          <a href="#"> أقوى عازل للصوت</a>
+                          <a href="#">
+                            {{features3}}
+                          </a>
                         </h3>
                         <div class="text">
-                          لاحتوائها علي غرف داخلية متعددة ولذلك هى عازلة جدا
-                          للازعاج والصوت بسبب عدم وجود فراغات واستخدام اللحام فى
-                          الزوايا والخامة نفسها لا تساعد في توصيل الصوت.
+                          {{features3Details}}
                         </div>
                       </div>
                     </div>
@@ -529,15 +565,28 @@
         </div>
       </section>
       <!--End Fluid Section One Section-->
-
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.091204476964!2d31.161941815113543!3d29.97680878190702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzM2LjUiTiAzMcKwMDknNTAuOSJF!5e0!3m2!1sen!2seg!4v1587181353221!5m2!1sen!2seg"
+        style="width: 100%;"
+        height="450"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
       <!--Estimate Section-->
       <section id="contactUS" class="estimate-section">
         <div class="auto-container">
           <!--Sec Title-->
           <div class="sec-title centered">
-            <h2>تواصل <span class="theme_color">معنا</span></h2>
+            <h2>
+              {{connect}}
+              <span class="theme_color">{{us}}</span>
+            </h2>
           </div>
-          <div class="row clearfix">
+          <div class="row clearfix" :style="{ 'text-align':  textAlign}">
             <!--Form Column-->
 
             <!--Info Column-->
@@ -552,15 +601,22 @@
                         <div class="icon-box">
                           <span class="icon flaticon-place"></span>
                         </div>
-                        <h3>Visit Our Place</h3>
+                        <h3>
+                          <a
+                            href="https://www.google.com/maps/place/29%C2%B058'36.5%22N+31%C2%B009'50.9%22E/@29.9768088,31.1619418,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d29.9768088!4d31.1641305?hl=en"
+                          >
+                            {{visitUs}}
+                          </a>
+                        </h3>
                         <ul>
                           <li>
                             {{addressDetails}}
                           </li>
                         </ul>
-                        <a href="#" class="find-map"
-                          ><span class="arrow flaticon-right-arrow-4"></span>
-                          Find Us On Map</a
+
+                        <a href="#"
+                          ><span class="icon flaticon-calendar-2"></span
+                          ><strong>10:00 AM - 7:00 PM</strong></a
                         >
                       </div>
                     </div>
@@ -574,7 +630,7 @@
                         <div class="icon-box">
                           <span class="icon flaticon-mail"></span>
                         </div>
-                        <h3>Phone & Mail</h3>
+                        <h3>{{phoneMail}}</h3>
                         <ul>
                           <li>
                             <span
@@ -596,10 +652,43 @@
                           </li>
                           <li>valuegypt.upvc@gmail.com</li>
                         </ul>
-                        <a href="#"
-                          ><span class="icon flaticon-calendar-2"></span
-                          ><strong>10:00 AM - 7:00 PM</strong></a
-                        >
+
+                        <!--Social Icon One-->
+                        <ul class="footer_social">
+                          <li class="">
+                            <a
+                              href="https://www.facebook.com/Value-for-UPVC-Aluminum-and-Facades-102928154452817"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><i class="fa fa-facebook"></i
+                            ></a>
+                          </li>
+                          <li class="">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><i class="fa fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li class="">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><i class="fa fa-youtube"></i
+                            ></a>
+                          </li>
+
+                          <li class="">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><i class="fa fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -609,7 +698,29 @@
           </div>
         </div>
       </section>
+
       <!--End Estimate Section-->
+      <footer class="main-footer">
+        <div class="auto-container">
+          <!--Widgets Section-->
+          <div class="widgets-section"></div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="row clearfix">
+              <div class="column col-lg-7 col-md-12 col-sm-12">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="images/footer-logo.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!--End pagewrapper-->
     <a
@@ -625,19 +736,13 @@
     <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
 
     <script src="js/jquery.fancybox.js"></script>
-
-    <script src="js/owl.js"></script>
-    <script src="js\wow.js"></script>
-
+    <script src="js/wow.js"></script>
     <script src="js/slick.js"></script>
 
     <!-- Master Slider -->
-
     <script src="js/masterslider/jquery.easing.min.js"></script>
     <script src="js/masterslider/masterslider.min.js"></script>
     <!--End Master Slider -->
-
-    <script src="js/jquery.nicescroll.min.js"></script>
 
     <script src="js/script.js"></script>
 
