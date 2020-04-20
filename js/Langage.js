@@ -2,8 +2,7 @@ var language = localStorage.getItem("language");
 
 if (language == "Ar") {
   var lang = {
-    lang: "images/ar.png",
-    tel: "التليفون",
+    lang: "images/en.png",
 
     connect: "تواصل",
     us: "معنا",
@@ -60,8 +59,8 @@ if (language == "Ar") {
   };
 } else {
   var lang = {
-    lang: "images/en.png",
-    tel: "tel",
+    lang: "images/ar.png",
+
     connect: "connect",
     us: "Us",
     previousWorks: "previous Works",
@@ -77,18 +76,11 @@ if (language == "Ar") {
                   Polyvinyl doors and windows from Paleo Egypt Now you can maintain your health and the health of your children, regardless of the level of pollution abroad, the best protection from viruses and bacteria because they are not made of metal, such as alumetal, which facilitates the attachment of microbes to it.
                   `,
     services1: " Windows ",
-    services1Details: ` تقوم الشركه بتخصيص افضل المهندسون والفنيون فى تصميم الخاص بك
-                    ومساعدتك فى تعين تصميم عالمي بمواصفات عالميه بشرط ان تكون
-                    هذه الخامات من افضل اقطاعات العالميه ومستورده من فرنسا
-                    وتركيا`,
+    services1Details: `The company allocates the best engineers and technicians in your design and helps you set a global design with international specifications provided that these materials are from the best global sectors and imported from France and Turkey`,
     services2: "Doors",
-    services2Details: ` نقدم وحدات أبواب و شبابيك الـ upvc بمواصفات عالمية معتمدة و
-                    أسعار تنافسية على مستوى المشاريع و الأفراد.`,
+    services2Details: `We offer upvc doors and windows units with certified international specifications and competitive prices at the level of projects and individuals.`,
     services3: "protection",
-    services3Details: `يستخدم الشيش الحماية لنفس اغراض الشيش العادي من عزل فعال ضد
-        الغبار والاتربة و الامطار بالاضافة الى اضفاء مزيد من الحماية
-        لمنزلك حيث انه مصنع من الالمونيوم عالى الكثافى والمتين جدا
-        مما يجعله صعب الاختراق`,
+    services3Details: `The sheesh uses protection for the same purposes as the regular sheesh from effective insulation against dust, dust and rain in addition to adding more protection to your home as it is made of highly dense and very durable aluminum which makes it difficult to penetrate.`,
     features1: "Resistant to environmental and climatic influences",
     features1Details: `It insulates water and rain, wind and storms, and dust and protects against UV rays`,
     features2: "High protection",
