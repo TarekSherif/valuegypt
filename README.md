@@ -1,3 +1,3 @@
 ��# valuegypt
 
-http://valueegypt.optimalwebsolution.com/
+http://valuegypt.com//
